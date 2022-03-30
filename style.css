@@ -130,7 +130,7 @@ main {
 }
 
 .btn--new {
-  top: 4rem;
+  top: 8rem;
 }
 
 .btn--roll {
@@ -139,6 +139,9 @@ main {
 
 .btn--hold {
   top: 46.1rem;
+}
+.btn--rules {
+  top: 1rem;
 }
 
 .btn:active {
