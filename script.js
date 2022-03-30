@@ -11,7 +11,6 @@ const diceEl = document.querySelector(`.dice`);
 const btnNew = document.querySelector(`.btn--new`);
 const btnRoll = document.querySelector(`.btn--roll`);
 const btnHold = document.querySelector(`.btn--hold`);
-const btnRules = document.querySelector(`btn--rules`);
 
 let scores;
 let currentScore;
@@ -43,6 +42,10 @@ const switchPlayer = function () {
   activePlayer = activePlayer === 0 ? 1 : 0;
   player0El.classList.toggle(`player--active`);
   player1El.classList.toggle(`player--active`);
+};
+
+const rules = function () {
+  console.log(test);
 };
 
 init();
