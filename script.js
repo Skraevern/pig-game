@@ -11,6 +11,9 @@ const diceEl = document.querySelector(`.dice`);
 const btnNew = document.querySelector(`.btn--new`);
 const btnRoll = document.querySelector(`.btn--roll`);
 const btnHold = document.querySelector(`.btn--hold`);
+const btnRules = document.querySelector(`.btn--rules`);
+const modal = document.getElementById("myModal");
+const closeModal = document.getElementsByClassName("close-modal")[0];
 
 let scores;
 let currentScore;
@@ -100,4 +103,11 @@ btnHold.addEventListener(`click`, function () {
 // New game button
 btnNew.addEventListener(`click`, function () {
   init();
+});
+// Rules button
+btnRules.addEventListener(`click`, function () {
+  modal.style.display = "block";
+});
+closeModal.addEventListener(`click`, function () {
+  modal.style.display = "none";
 });
