@@ -47,8 +47,8 @@ const switchPlayer = function () {
   player1El.classList.toggle(`player--active`);
 };
 
-const rules = function () {
-  console.log(test);
+const biggerDice = function () {
+  diceEl.classList.add("bigger-dice");
 };
 
 init();
@@ -62,6 +62,7 @@ btnRoll.addEventListener(`click`, function () {
 
     // 2. Dislplay dice
     diceEl.classList.remove(`hidden`);
+    diceEl.classList.remove(`bigger-dice`);
     diceEl.src = `dice-${dice}.png`;
 
     // 3. Check for rolled 1: if true, switch to next player
@@ -73,6 +74,7 @@ btnRoll.addEventListener(`click`, function () {
     } else {
       // Switch to next player
       switchPlayer();
+      diceEl.classList.add("bigger-dice");
     }
   }
 });

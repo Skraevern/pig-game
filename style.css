@@ -162,6 +162,10 @@ main {
   box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.2);
 }
 
+.bigger-dice {
+  height: 15rem;
+}
+
 .player--winner {
   background-color: gold;
 }
